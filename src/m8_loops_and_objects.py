@@ -6,10 +6,11 @@ This module demonstrates simple LOOPS of the form:
 and also USING OBJECTS.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Yuhei.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
+import turtle
 
 
 def main():
@@ -57,6 +58,14 @@ def draw_circles1():
     print('--------------------------------------------------')
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
+    for k in range(200):
+        one_turtle = turtle.Turtle('turtle')
+        one_turtle.circle(50)
+        one_turtle.penup()
+        one_turtle.setposition(k, k)
+        one_turtle.pendown()
+        one_turtle.circle(50)
+        k += 10
 
 
 def print_sequence2():
